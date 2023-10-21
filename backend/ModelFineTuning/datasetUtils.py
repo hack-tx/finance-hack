@@ -61,9 +61,6 @@ def dataSet_toHF_mixer():
         except:
             print('error')
 
-# def statementDatasetToHF():
-
-
 
 def format_for_llm(data):
     formatted_data = "Bank Statement:\n"
@@ -74,9 +71,6 @@ def format_for_llm(data):
             formatted_data += f"  {key}: {value}\n"
     
     return formatted_data
-
-
-
 
 def process_data(filename):
     # Read the JSON file
@@ -98,6 +92,30 @@ def process_data(filename):
         json.dump(processed_data, file, indent=4)
 
 
+def format_data(data, instruction_prompt):
+    formatted_data = []
+    
+    for entry in data:
+        formatted_string = f"{instruction_prompt} {entry['question']} {entry['response']}"
+        formatted_data.append(formatted_string)
+    
+    return {"train": formatted_data}
+
+def process_and_save_data(input_filename, instruction_prompt, output_filename):
+    # Read the JSON file
+    with open(input_filename, 'r') as file:
+        data = json.load(file)
+    
+    formatted_data = format_data(data, instruction_prompt)
+    
+    # Dump the values into a new JSON file
+    with open(output_filename, 'w') as file:
+        json.dump(formatted_data, file, indent=4)
+
+# Sample instruction prompt
+instruction_prompt = "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>"
+
+# Process and save the data
 
 
 
@@ -107,7 +125,8 @@ if __name__ == '__main__':
     # dataSet_toHF_mixer()
 
     # Assuming the filename is 'data.json'
-    process_data('GPT-Statement-dataset.json')
+    # process_data('GPT-Statement-dataset.json')
+    process_and_save_data('processed_data.json', instruction_prompt, 'formatted_data.json')
 
 
 
