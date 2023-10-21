@@ -1,1 +1,3 @@
 backend/.DS_Store
+backend/API/venv
+backend/API/__pycache__/api.cpython-310.pyc
