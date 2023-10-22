@@ -173,7 +173,7 @@ async def statement_question(statementModel: StatementModel):
 
 @app.post("/upload-csv")
 async def upload_file(file: UploadFile):
-    file_location = f"files/{file.filename}"
+    file_location = f"files/transaction.csv"
     with open(file_location, "wb+") as file_object:
         file_object.write(file.file.read())
     print({"info": f"file '{file.filename}' uploaded at {file_location}"})
