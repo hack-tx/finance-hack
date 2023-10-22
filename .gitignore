@@ -1,3 +1,11 @@
 backend/.DS_Store
 backend/API/venv
 backend/API/__pycache__/api.cpython-310.pyc
+frontend/fintechbeemo/macos/
+frontend/fintechbeemo/windows/
+frontend/fintechbeemo/ios/
+frontend/fintechbeemo/android/
+frontend/fintechbeemo/linux/
+frontend/fintechbeemo/web/
+frontend/.DS_Store
+frontend/fintechbeemo/.metadata

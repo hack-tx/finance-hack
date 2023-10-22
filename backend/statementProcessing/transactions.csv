@@ -1,5 +1,5 @@
 Date,Description,Amount,Category
-2023-01-01,Deposit from Parents,500.00,Income
+2023-01-01,Deposit from Parents,1000.00,Income
 2023-01-03,Textbook Purchase,-75.23,Education
 2023-01-05,Coffee at Campus Cafe,-3.50,Food & Beverage
 2023-01-08,Monthly Spotify Subscription,-9.99,Entertainment
@@ -17,9 +17,22 @@ Date,Description,Amount,Category
 2023-02-08,Coffee at Campus Cafe,-3.50,Food & Beverage
 2023-02-10,Concert Ticket,-35.00,Entertainment
 2023-02-12,Valentine's Day Gift,-40.00,Gifts & Donations
-2023-02-15,Deposit from Part-time Job,150.00,Income
+2023-02-15,Deposit from Part-time Job,250.00,Income
 2023-02-18,Printing Fees,-5.00,Education
 2023-02-20,Study Snacks,-10.00,Food & Beverage
 2023-02-23,Monthly Netflix Subscription,-13.99,Entertainment
 2023-02-25,Grocery Shopping,-48.00,Groceries
 2023-02-28,End of Month Pizza,-16.00,Food & Beverage
+2023-03-03,Coffee with Classmate,-4.50,Food & Beverage
+2023-03-05,Cinema with Friends,-15.00,Entertainment
+2023-03-08,New Shoes,-60.00,Apparel
+2023-03-10,Train Ticket to Nearby City,-20.00,Transportation
+2023-03-12,Copy of Birth Certificate,-10.00,Official Documents
+2023-03-15,Deposit from Part-time Job,150.00,Income
+2023-03-18,Library Late Fee,-2.00,Education
+2023-03-20,Lunch at Campus Cafeteria,-8.00,Food & Beverage
+2023-03-23,Monthly Phone Plan,-40.00,Utilities
+2023-03-25,Grocery Shopping,-55.00,Groceries
+2023-03-28,Petrol for Car,-30.00,Transportation
+2023-03-30,Dinner with Family,-40.00,Food & Beverage
+2023-10-20,Deposit from Parents,1000.00,Income
