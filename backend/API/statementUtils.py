@@ -74,10 +74,12 @@ def process_csv(filename):
     print(json_output)
     return json_output
 
+
 def process_csv_to_json(filename):
     # Initialize defaultdicts to store sums and counts
     sums = defaultdict(float)
     counts = defaultdict(int)
+    transactions = []  # List to collect each transaction row
 
     # Open and read the CSV file
     with open(filename, 'r') as file:
@@ -91,22 +93,30 @@ def process_csv_to_json(filename):
             sums[category] += amount
             counts[category] += 1
 
+            # Add each row as a dictionary to the transactions list
+            transactions.append({
+                "Date": row[0],
+                "Description": row[1],
+                "Amount": amount,
+                "Category": category,
+            })
+
     # Calculate averages
     averages = {category: sums[category] / counts[category] for category in sums}
 
     # Prepare the results in a dictionary
-    results = {}
+    results = {
+        "Summary": {},
+        "Transactions": transactions  # Include the transactions list in the results
+    }
     for category in sums:
-        results[category] = {
+        results["Summary"][category] = {
             "Total": sums[category],
             "Count": counts[category],
             "Average": averages[category]
         }
 
-
     return results
-
-
 
 
 if __name__ == "__main__":
