@@ -81,17 +81,20 @@ async def profile_question_2(profile: ProfileModel):
 
     """
 
+    complete_response = ''
+
     response = await make_post_request(query)
     output = response.json()
 
     generated_text = output[0]['generated_text']
+    complete_response = complete_response + generated_text
     if not generated_text.endswith('\n'):
         new_query = query + generated_text
         print(new_query)
         response = await make_post_request(new_query)
-        output = response.json()
-
-    return {"response": output[0]['generated_text']}
+        output = response.json()    
+        complete_response = complete_response + output[0]['generated_text']
+    return {"response": complete_response}
 
 async def make_post_request(query):
     response = requests.post(API_URL, headers=headers, json={"inputs": query})
