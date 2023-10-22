@@ -97,7 +97,7 @@ async def profile_question_2(profile: ProfileModel):
         
         query += generated_text  # append the generated text to the query for the next iteration
 
-    return {"response": complete_response.replace('/n', '')}
+    return {"response": complete_response.replace('\n', '')}
 
 async def make_post_request(query):
     async with httpx.AsyncClient() as client:
