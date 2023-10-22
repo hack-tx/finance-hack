@@ -1,3 +1,10 @@
+### Dataset Utils
+
+1. Fill up GPT-Statement-dataset & GPT-Invesment-dataset
+2. run datasetUtils.process_data('GPT-Statement-dataset.json')
+
+
+
 ```python
 Invesment_Prompt_Example = [
     {

@@ -125,8 +125,8 @@ if __name__ == '__main__':
     # dataSet_toHF_mixer()
 
     # Assuming the filename is 'data.json'
-    # process_data('GPT-Statement-dataset.json')
-    process_and_save_data('processed_data.json', instruction_prompt, 'formatted_data.json')
+    process_data('GPT-Statement-dataset.json')
+    # process_and_save_data('processed_data.json', instruction_prompt, 'formatted_data.json')
 
 
 

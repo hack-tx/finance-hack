@@ -290,374 +290,797 @@
     },
     "response": "###Response:\nYour spending on dining and entertainment seems a bit high relative to your income. Consider cooking at home more often and looking for free or low-cost entertainment options."
   },
-
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "How can I allocate more to savings?",
       "bankstatement": {
         "Income": {
-          "Total": 950.0,
+          "Total": 1800.0,
           "Count": 1,
-          "Average": 950.0
+          "Average": 1800.0
         },
-        "Rent": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
-        },
-        "Health": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        },
-        "Education": {
-          "Total": -150.0,
-          "Count": 1,
-          "Average": -150.0
-        },
-        "Miscellaneous": {
-          "Total": -50.0,
-          "Count": 3,
-          "Average": -16.67
-        }
-      }
-    },
-    "response": "###Response:\nGiven your current income and expenses, it might be beneficial to review your spending in the 'Miscellaneous' category. Ensure that these expenses are necessary or see if there are areas where you can cut back."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 800.0,
-          "Count": 1,
-          "Average": 800.0
-        },
-        "Loans": {
-          "Total": -200.0,
-          "Count": 1,
-          "Average": -200.0
-        },
-        "Groceries": {
-          "Total": -150.0,
-          "Count": 4,
-          "Average": -37.5
-        },
-        "Transport": {
-          "Total": -100.0,
-          "Count": 4,
-          "Average": -25.0
-        },
-        "Savings": {
-          "Total": -50.0,
-          "Count": 1,
-          "Average": -50.0
-        }
-      }
-    },
-    "response": "###Response:\nIt's commendable that you're saving given your income. However, you might want to re-evaluate your grocery spending. Consider buying in bulk or looking for discounts to save more in this category."
-  },
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1500.0,
-          "Count": 2,
-          "Average": 750.0
-        },
-        "Mortgage": {
+        "Rent & Mortgage": {
           "Total": -900.0,
           "Count": 1,
           "Average": -900.0
         },
-        "Insurance": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
+        "Food & Beverage": {
+          "Total": -250.0,
+          "Count": 12,
+          "Average": -20.83
         },
-        "Personal Care": {
-          "Total": -60.0,
-          "Count": 3,
-          "Average": -20.0
-        },
-        "Online Services": {
-          "Total": -40.0,
-          "Count": 2,
-          "Average": -20.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your income, you might want to evaluate your spending on personal care and online services. Consider looking for deals or cutting back on non-essential services."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 800.0,
-          "Count": 1,
-          "Average": 800.0
-        },
-        "Rent": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
-        },
-        "Gas & Fuel": {
+        "Entertainment": {
           "Total": -100.0,
           "Count": 4,
           "Average": -25.0
         },
-        "Mobile & Internet": {
-          "Total": -60.0,
-          "Count": 2,
-          "Average": -30.0
-        },
-        "Leisure Activities": {
-          "Total": -50.0,
-          "Count": 2,
-          "Average": -25.0
-        }
-      }
-    },
-    "response": "###Response:\nConsidering your income, you might want to monitor your spending on gas & fuel and leisure activities. Opt for more cost-effective alternatives or limit non-essential outings."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 2000.0,
-          "Count": 2,
-          "Average": 1000.0
-        },
-        "Loans": {
-          "Total": -400.0,
-          "Count": 1,
-          "Average": -400.0
-        },
-        "Dining": {
+        "Transportation": {
           "Total": -150.0,
           "Count": 5,
           "Average": -30.0
         },
-        "Electronics": {
-          "Total": -300.0,
-          "Count": 2,
-          "Average": -150.0
-        },
         "Utilities": {
-          "Total": -100.0,
+          "Total": -70.0,
           "Count": 3,
-          "Average": -33.33
+          "Average": -23.33
+        },
+        "Health & Fitness": {
+          "Total": -120.0,
+          "Count": 3,
+          "Average": -40.0
         }
       }
     },
-    "response": "###Response:\nWith your current income, it's advisable to review your spending on dining and electronics. Consider setting a budget for these categories to better manage your finances."
+    "response": "###Response:\nYou might consider reducing the frequency of dining out, as your food & beverage expenses are relatively high. Additionally, look into more economical transportation options or carpooling to save further. This could help you allocate more towards savings."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Is my spending on utilities high?",
       "bankstatement": {
         "Income": {
-          "Total": 1000.0,
+          "Total": 2200.0,
           "Count": 1,
-          "Average": 1000.0
+          "Average": 2200.0
         },
-        "Groceries": {
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
+        },
+        "Food & Beverage": {
+          "Total": -180.0,
+          "Count": 9,
+          "Average": -20.0
+        },
+        "Entertainment": {
+          "Total": -90.0,
+          "Count": 3,
+          "Average": -30.0
+        },
+        "Transportation": {
+          "Total": -120.0,
+          "Count": 4,
+          "Average": -30.0
+        },
+        "Utilities": {
           "Total": -200.0,
           "Count": 4,
           "Average": -50.0
         },
-        "Transport": {
-          "Total": -100.0,
-          "Count": 5,
+        "Apparel": {
+          "Total": -80.0,
+          "Count": 2,
+          "Average": -40.0
+        }
+      }
+    },
+    "response": "###Response:\nYour utilities expense averages to $50 per transaction, which seems a bit high relative to your income. It might be worth reviewing these bills or considering energy-saving measures to reduce costs."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Am I spending too much on entertainment?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2500.0,
+          "Count": 1,
+          "Average": 2500.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1300.0,
+          "Count": 1,
+          "Average": -1300.0
+        },
+        "Food & Beverage": {
+          "Total": -220.0,
+          "Count": 11,
           "Average": -20.0
         },
-        "Medical": {
+        "Entertainment": {
+          "Total": -300.0,
+          "Count": 6,
+          "Average": -50.0
+        },
+        "Transportation": {
+          "Total": -140.0,
+          "Count": 5,
+          "Average": -28.0
+        },
+        "Utilities": {
+          "Total": -90.0,
+          "Count": 3,
+          "Average": -30.0
+        },
+        "Travel": {
           "Total": -150.0,
-          "Count": 2,
-          "Average": -75.0
+          "Count": 1,
+          "Average": -150.0
+        }
+      }
+    },
+    "response": "###Response:\nYour entertainment expenses average to $50 per transaction, which is a bit high. Considering you have six transactions in this category, you might want to evaluate and prioritize your entertainment choices to save more."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I reduce my transportation costs?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1700.0,
+          "Count": 1,
+          "Average": 1700.0
+        },
+        "Rent & Mortgage": {
+          "Total": -900.0,
+          "Count": 1,
+          "Average": -900.0
+        },
+        "Food & Beverage": {
+          "Total": -160.0,
+          "Count": 8,
+          "Average": -20.0
         },
         "Entertainment": {
           "Total": -80.0,
           "Count": 3,
           "Average": -26.67
-        }
-      }
-    },
-    "response": "###Response:\nGiven your income, you might want to reconsider your spending on groceries and entertainment. Look for discounts, or try to limit non-essential purchases."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1800.0,
-          "Count": 2,
-          "Average": 900.0
         },
-        "Housing": {
-          "Total": -800.0,
-          "Count": 1,
-          "Average": -800.0
-        },
-        "Clothing": {
-          "Total": -100.0,
-          "Count": 3,
+        "Transportation": {
+          "Total": -200.0,
+          "Count": 6,
           "Average": -33.33
         },
-        "Education": {
-          "Total": -200.0,
-          "Count": 2,
-          "Average": -100.0
-        },
-        "Gifts": {
+        "Utilities": {
           "Total": -70.0,
           "Count": 2,
           "Average": -35.0
+        },
+        "Health & Fitness": {
+          "Total": -90.0,
+          "Count": 2,
+          "Average": -45.0
         }
       }
     },
-    "response": "###Response:\nConsidering your income, you might want to evaluate your spending on clothing and gifts. Setting a monthly budget for these categories can help you save more."
-  },
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1500.0,
-          "Count": 2,
-          "Average": 750.0
-        },
-        "Mortgage": {
-          "Total": -900.0,
-          "Count": 1,
-          "Average": -900.0
-        },
-        "Insurance": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        },
-        "Childcare": {
-          "Total": -200.0,
-          "Count": 1,
-          "Average": -200.0
-        },
-        "Savings": {
-          "Total": -100.0,
-          "Count": 1,
-          "Average": -100.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your income, you have a good amount allocated to mortgage. Consider reviewing your insurance plans to see if there are more cost-effective options available. Also, increasing your savings can provide a financial cushion for unexpected expenses."
+    "response": "###Response:\nYour transportation costs are averaging $33.33 per transaction. Consider using public transportation, carpooling, or even biking if feasible. Additionally, planning your trips efficiently to reduce unnecessary travel can help cut costs."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Do I have room to spend more on hobbies?",
       "bankstatement": {
         "Income": {
-          "Total": 800.0,
+          "Total": 3000.0,
           "Count": 1,
-          "Average": 800.0
+          "Average": 3000.0
         },
-        "Rent": {
-          "Total": -500.0,
+        "Rent & Mortgage": {
+          "Total": -1400.0,
           "Count": 1,
-          "Average": -500.0
+          "Average": -1400.0
         },
-        "Internet & Cable": {
-          "Total": -60.0,
-          "Count": 1,
-          "Average": -60.0
+        "Food & Beverage": {
+          "Total": -240.0,
+          "Count": 12,
+          "Average": -20.0
         },
-        "Mobile Phone": {
-          "Total": -40.0,
-          "Count": 1,
-          "Average": -40.0
+        "Entertainment": {
+          "Total": -180.0,
+          "Count": 4,
+          "Average": -45.0
         },
         "Transportation": {
+          "Total": -160.0,
+          "Count": 5,
+          "Average": -32.0
+        },
+        "Utilities": {
+          "Total": -110.0,
+          "Count": 3,
+          "Average": -36.67
+        },
+        "Hobbies": {
+          "Total": -100.0,
+          "Count": 2,
+          "Average": -50.0
+        }
+      }
+    },
+    "response": "###Response:\nAfter all your expenses, you have a remaining balance of $810 from your income. While you do have some room to allocate more towards hobbies, it's essential to ensure you're also saving and preparing for unforeseen expenses."
+  },
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Is my rent too high?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1800.0,
+          "Count": 1,
+          "Average": 1800.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1000.0,
+          "Count": 1,
+          "Average": -1000.0
+        },
+        "Food & Beverage": {
+          "Total": -150.0,
+          "Count": 7,
+          "Average": -21.43
+        },
+        "Entertainment": {
+          "Total": -90.0,
+          "Count": 4,
+          "Average": -22.5
+        },
+        "Transportation": {
+          "Total": -80.0,
+          "Count": 4,
+          "Average": -20.0
+        },
+        "Utilities": {
+          "Total": -70.0,
+          "Count": 3,
+          "Average": -23.33
+        },
+        "Healthcare": {
           "Total": -50.0,
           "Count": 2,
           "Average": -25.0
         }
       }
     },
-    "response": "###Response:\nConsidering your income, you might want to explore options for more affordable internet and mobile phone plans. This could free up some funds for savings or other essential expenses."
+    "response": "###Response:\nYour rent is taking up more than half of your income. It's generally recommended that rent should be around 30% of your income. You might want to consider a more affordable housing option."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "How can I save on utilities?",
       "bankstatement": {
         "Income": {
-          "Total": 2000.0,
-          "Count": 2,
-          "Average": 1000.0
-        },
-        "Loans": {
-          "Total": -300.0,
+          "Total": 2200.0,
           "Count": 1,
-          "Average": -300.0
+          "Average": 2200.0
         },
-        "Dining Out": {
-          "Total": -150.0,
-          "Count": 4,
-          "Average": -37.5
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
+        },
+        "Food & Beverage": {
+          "Total": -200.0,
+          "Count": 8,
+          "Average": -25.0
         },
         "Entertainment": {
           "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
+          "Count": 5,
+          "Average": -20.0
         },
-        "Groceries": {
+        "Transportation": {
+          "Total": -150.0,
+          "Count": 5,
+          "Average": -30.0
+        },
+        "Utilities": {
           "Total": -250.0,
+          "Count": 4,
+          "Average": -62.5
+        },
+        "Shopping": {
+          "Total": -150.0,
           "Count": 3,
+          "Average": -50.0
+        }
+      }
+    },
+    "response": "###Response:\nYour utilities seem to be a significant portion of your expenses. Consider energy-saving measures like using LED bulbs, unplugging devices when not in use, and checking for any water leaks to reduce costs."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Am I spending too much on shopping?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2500.0,
+          "Count": 1,
+          "Average": 2500.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1200.0,
+          "Count": 1,
+          "Average": -1200.0
+        },
+        "Food & Beverage": {
+          "Total": -180.0,
+          "Count": 9,
+          "Average": -20.0
+        },
+        "Entertainment": {
+          "Total": -110.0,
+          "Count": 4,
+          "Average": -27.5
+        },
+        "Transportation": {
+          "Total": -130.0,
+          "Count": 5,
+          "Average": -26.0
+        },
+        "Utilities": {
+          "Total": -100.0,
+          "Count": 3,
+          "Average": -33.33
+        },
+        "Shopping": {
+          "Total": -500.0,
+          "Count": 6,
           "Average": -83.33
         }
       }
     },
-    "response": "###Response:\nWith your current income, you might consider allocating less to dining out and entertainment. By doing so, you can allocate more towards paying off loans faster or increasing your savings."
+    "response": "###Response:\nYour shopping expenses are quite high relative to your income. It might be beneficial to set a monthly budget for shopping and stick to it to ensure you're saving adequately."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Should I cut back on entertainment?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1600.0,
+          "Count": 1,
+          "Average": 1600.0
+        },
+        "Rent & Mortgage": {
+          "Total": -900.0,
+          "Count": 1,
+          "Average": -900.0
+        },
+        "Food & Beverage": {
+          "Total": -140.0,
+          "Count": 7,
+          "Average": -20.0
+        },
+        "Entertainment": {
+          "Total": -300.0,
+          "Count": 6,
+          "Average": -50.0
+        },
+        "Transportation": {
+          "Total": -100.0,
+          "Count": 4,
+          "Average": -25.0
+        },
+        "Utilities": {
+          "Total": -80.0,
+          "Count": 3,
+          "Average": -26.67
+        },
+        "Healthcare": {
+          "Total": -50.0,
+          "Count": 2,
+          "Average": -25.0
+        }
+      }
+    },
+    "response": "###Response:\nYour entertainment expenses are quite significant, almost 19% of your income. It might be a good idea to evaluate these expenses and see where you can cut back without compromising your quality of life."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I save more?",
+      "bankstatement": {
+        "Income": {
+          "Total": 3000.0,
+          "Count": 1,
+          "Average": 3000.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1400.0,
+          "Count": 1,
+          "Average": -1400.0
+        },
+        "Food & Beverage": {
+          "Total": -250.0,
+          "Count": 10,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -200.0,
+          "Count": 5,
+          "Average": -40.0
+        },
+        "Transportation": {
+          "Total": -180.0,
+          "Count": 6,
+          "Average": -30.0
+        },
+        "Utilities": {
+          "Total": -120.0,
+          "Count": 4,
+          "Average": -30.0
+        },
+        "Education": {
+          "Total": -150.0,
+          "Count": 3,
+          "Average": -50.0
+        }
+      }
+    },
+    "response": "###Response:\nTo save more, consider reviewing your food & beverage and entertainment expenses. Cooking at home and finding cost-effective entertainment options can help. Additionally, if there are any educational expenses that aren't essential, you might want to reconsider them."
+  },
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Is my rent too high?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1800.0,
+          "Count": 1,
+          "Average": 1800.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
+        },
+        "Food & Beverage": {
+          "Total": -150.0,
+          "Count": 7,
+          "Average": -21.43
+        },
+        "Entertainment": {
+          "Total": -90.0,
+          "Count": 4,
+          "Average": -22.5
+        },
+        "Transportation": {
+          "Total": -80.0,
+          "Count": 4,
+          "Average": -20.0
+        },
+        "Utilities": {
+          "Total": -70.0,
+          "Count": 3,
+          "Average": -23.33
+        },
+        "Healthcare": {
+          "Total": -100.0,
+          "Count": 2,
+          "Average": -50.0
+        }
+      }
+    },
+    "response": "###Response:\nYour rent accounts for over 60% of your income, which is quite high. Ideally, rent should be around 30% of your income. You might want to consider relocating to a more affordable place."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I save on utilities?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2200.0,
+          "Count": 1,
+          "Average": 2200.0
+        },
+        "Rent & Mortgage": {
+          "Total": -900.0,
+          "Count": 1,
+          "Average": -900.0
+        },
+        "Food & Beverage": {
+          "Total": -200.0,
+          "Count": 8,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -120.0,
+          "Count": 5,
+          "Average": -24.0
+        },
+        "Transportation": {
+          "Total": -150.0,
+          "Count": 5,
+          "Average": -30.0
+        },
+        "Utilities": {
+          "Total": -180.0,
+          "Count": 4,
+          "Average": -45.0
+        },
+        "Shopping": {
+          "Total": -150.0,
+          "Count": 3,
+          "Average": -50.0
+        }
+      }
+    },
+    "response": "###Response:\nYour utilities average $45 per transaction. Consider energy-saving measures like using LED bulbs, unplugging devices when not in use, and setting thermostats efficiently to reduce costs."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Am I spending too much on shopping?",
       "bankstatement": {
         "Income": {
           "Total": 2500.0,
-          "Count": 2,
-          "Average": 1250.0
+          "Count": 1,
+          "Average": 2500.0
         },
-        "Car Maintenance": {
+        "Rent & Mortgage": {
+          "Total": -1000.0,
+          "Count": 1,
+          "Average": -1000.0
+        },
+        "Food & Beverage": {
+          "Total": -220.0,
+          "Count": 9,
+          "Average": -24.44
+        },
+        "Entertainment": {
+          "Total": -110.0,
+          "Count": 4,
+          "Average": -27.5
+        },
+        "Transportation": {
+          "Total": -130.0,
+          "Count": 5,
+          "Average": -26.0
+        },
+        "Utilities": {
+          "Total": -160.0,
+          "Count": 4,
+          "Average": -40.0
+        },
+        "Shopping": {
+          "Total": -500.0,
+          "Count": 5,
+          "Average": -100.0
+        }
+      }
+    },
+    "response": "###Response:\nYou're spending 20% of your income on shopping. It's essential to evaluate if these purchases are necessities or luxuries. If it's the latter, consider cutting back to save more."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Should I allocate more for investments?",
+      "bankstatement": {
+        "Income": {
+          "Total": 3000.0,
+          "Count": 1,
+          "Average": 3000.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1200.0,
+          "Count": 1,
+          "Average": -1200.0
+        },
+        "Food & Beverage": {
+          "Total": -250.0,
+          "Count": 10,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -180.0,
+          "Count": 6,
+          "Average": -30.0
+        },
+        "Transportation": {
+          "Total": -200.0,
+          "Count": 6,
+          "Average": -33.33
+        },
+        "Utilities": {
+          "Total": -150.0,
+          "Count": 4,
+          "Average": -37.5
+        },
+        "Investments": {
+          "Total": -400.0,
+          "Count": 2,
+          "Average": -200.0
+        }
+      }
+    },
+    "response": "###Response:\nCurrently, you're allocating around 13% of your income to investments. If you're looking to grow your wealth, consider increasing this allocation by cutting back on non-essential expenses like entertainment."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I reduce my transportation costs?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1700.0,
+          "Count": 1,
+          "Average": 1700.0
+        },
+        "Rent & Mortgage": {
+          "Total": -900.0,
+          "Count": 1,
+          "Average": -900.0
+        },
+        "Food & Beverage": {
+          "Total": -180.0,
+          "Count": 8,
+          "Average": -22.5
+        },
+        "Entertainment": {
+          "Total": -100.0,
+          "Count": 4,
+          "Average": -25.0
+        },
+        "Transportation": {
+          "Total": -220.0,
+          "Count": 7,
+          "Average": -31.43
+        },
+        "Utilities": {
+          "Total": -140.0,
+          "Count": 3,
+          "Average": -46.67
+        },
+        "Healthcare": {
+          "Total": -80.0,
+          "Count": 2,
+          "Average": -40.0
+        }
+      }
+    },
+    "response": "###Response:\nYour transportation costs average $31.43 per transaction. To reduce this, consider carpooling, using public transportation, or even biking to nearby places. Regular vehicle maintenance can also help in fuel efficiency."
+  },
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Is my rent too high?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1800.0,
+          "Count": 1,
+          "Average": 1800.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
+        },
+        "Food & Beverage": {
+          "Total": -150.0,
+          "Count": 7,
+          "Average": -21.43
+        },
+        "Entertainment": {
+          "Total": -90.0,
+          "Count": 4,
+          "Average": -22.5
+        },
+        "Transportation": {
+          "Total": -100.0,
+          "Count": 5,
+          "Average": -20.0
+        },
+        "Utilities": {
+          "Total": -60.0,
+          "Count": 3,
+          "Average": -20.0
+        },
+        "Healthcare": {
           "Total": -200.0,
           "Count": 2,
           "Average": -100.0
-        },
-        "Vacations": {
-          "Total": -500.0,
+        }
+      }
+    },
+    "response": "###Response:\nYour rent accounts for over 60% of your income, which is quite high. It's generally recommended that rent should be around 30% of your income. You might want to consider a more affordable housing option."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I save on utilities?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2200.0,
           "Count": 1,
-          "Average": -500.0
+          "Average": 2200.0
+        },
+        "Rent & Mortgage": {
+          "Total": -900.0,
+          "Count": 1,
+          "Average": -900.0
+        },
+        "Food & Beverage": {
+          "Total": -250.0,
+          "Count": 10,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -120.0,
+          "Count": 5,
+          "Average": -24.0
+        },
+        "Transportation": {
+          "Total": -150.0,
+          "Count": 6,
+          "Average": -25.0
+        },
+        "Utilities": {
+          "Total": -180.0,
+          "Count": 4,
+          "Average": -45.0
+        },
+        "Apparel": {
+          "Total": -100.0,
+          "Count": 3,
+          "Average": -33.33
+        }
+      }
+    },
+    "response": "###Response:\nYour utilities average $45 per transaction. Consider energy-saving habits like turning off lights when not in use, unplugging devices, and using energy-efficient appliances to reduce costs."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Am I spending too much on entertainment?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2500.0,
+          "Count": 1,
+          "Average": 2500.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
+        },
+        "Food & Beverage": {
+          "Total": -300.0,
+          "Count": 12,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -500.0,
+          "Count": 10,
+          "Average": -50.0
+        },
+        "Transportation": {
+          "Total": -200.0,
+          "Count": 8,
+          "Average": -25.0
         },
         "Utilities": {
           "Total": -150.0,
@@ -665,1247 +1088,1154 @@
           "Average": -50.0
         },
         "Healthcare": {
-          "Total": -300.0,
+          "Total": -250.0,
           "Count": 2,
-          "Average": -150.0
+          "Average": -125.0
         }
       }
     },
-    "response": "###Response:\nGiven your income, you might want to review your spending on vacations. Consider planning budget-friendly trips or saving over a longer period for vacations. This can help you manage other expenses like healthcare and car maintenance more comfortably."
+    "response": "###Response:\nYour entertainment expenses account for 20% of your income. It's a significant portion, and you might want to evaluate if some of these expenses can be reduced or if there are cheaper alternatives."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "How's my transportation cost?",
       "bankstatement": {
         "Income": {
-          "Total": 1800.0,
-          "Count": 2,
-          "Average": 900.0
+          "Total": 3000.0,
+          "Count": 1,
+          "Average": 3000.0
         },
-        "Hobbies": {
-          "Total": -100.0,
-          "Count": 2,
+        "Rent & Mortgage": {
+          "Total": -1400.0,
+          "Count": 1,
+          "Average": -1400.0
+        },
+        "Food & Beverage": {
+          "Total": -350.0,
+          "Count": 14,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -250.0,
+          "Count": 5,
           "Average": -50.0
         },
-        "Pets": {
-          "Total": -80.0,
-          "Count": 2,
-          "Average": -40.0
-        },
-        "Books & Learning": {
-          "Total": -60.0,
-          "Count": 3,
-          "Average": -20.0
-        },
         "Transportation": {
-          "Total": -150.0,
+          "Total": -450.0,
+          "Count": 9,
+          "Average": -50.0
+        },
+        "Utilities": {
+          "Total": -200.0,
           "Count": 4,
-          "Average": -37.5
+          "Average": -50.0
+        },
+        "Apparel": {
+          "Total": -150.0,
+          "Count": 3,
+          "Average": -50.0
         }
       }
     },
-    "response": "###Response:\nConsidering your income, you might want to set a monthly budget for hobbies and books & learning. This can help you manage your transportation costs and potentially save more each month."
+    "response": "###Response:\nYour transportation costs average $50 per transaction, totaling $450 for the month. Depending on your needs, consider using public transportation, carpooling, or walking to reduce these costs."
   },
+
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Should I cut back on apparel?",
       "bankstatement": {
         "Income": {
-          "Total": 1500.0,
-          "Count": 3,
-          "Average": 500.0
-        },
-        "Mortgage": {
-          "Total": -900.0,
+          "Total": 2800.0,
           "Count": 1,
-          "Average": -900.0
+          "Average": 2800.0
         },
-        "Online Services": {
-          "Total": -120.0,
+        "Rent & Mortgage": {
+          "Total": -1300.0,
+          "Count": 1,
+          "Average": -1300.0
+        },
+        "Food & Beverage": {
+          "Total": -320.0,
+          "Count": 13,
+          "Average": -24.62
+        },
+        "Entertainment": {
+          "Total": -220.0,
           "Count": 4,
-          "Average": -30.0
+          "Average": -55.0
         },
-        "Car Maintenance": {
-          "Total": -150.0,
-          "Count": 2,
-          "Average": -75.0
+        "Transportation": {
+          "Total": -300.0,
+          "Count": 6,
+          "Average": -50.0
         },
-        "Insurance": {
-          "Total": -80.0,
-          "Count": 1,
+        "Utilities": {
+          "Total": -180.0,
+          "Count": 3,
+          "Average": -60.0
+        },
+        "Apparel": {
+          "Total": -400.0,
+          "Count": 5,
           "Average": -80.0
         }
       }
     },
-    "response": "###Response:\nGiven your income, you might want to review your spending on online services and car maintenance. Consider looking for discounts or alternative services to reduce these expenses."
+    "response": "###Response:\nYour apparel spending is averaging $80 per transaction, which is relatively high. Consider evaluating your clothing purchases and see if there are items you can do without or if there are sales and discounts you can take advantage of."
   },
-
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 800.0,
-          "Count": 2,
-          "Average": 400.0
-        },
-        "Rent": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
-        },
-        "Cell Phone": {
-          "Total": -60.0,
-          "Count": 1,
-          "Average": -60.0
-        },
-        "Beauty & Personal Care": {
-          "Total": -100.0,
-          "Count": 3,
-          "Average": -33.33
-        },
-        "Transportation": {
-          "Total": -40.0,
-          "Count": 2,
-          "Average": -20.0
-        }
-      }
-    },
-    "response": "###Response:\nConsidering your income, you might want to cut back on beauty & personal care expenses. This can help you save more or allocate funds to other essential needs."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 2000.0,
-          "Count": 1,
-          "Average": 2000.0
-        },
-        "Vacations": {
-          "Total": -600.0,
-          "Count": 1,
-          "Average": -600.0
-        },
-        "Electronics": {
-          "Total": -300.0,
-          "Count": 2,
-          "Average": -150.0
-        },
-        "Dining Out": {
-          "Total": -250.0,
-          "Count": 5,
-          "Average": -50.0
-        },
-        "Utilities": {
-          "Total": -150.0,
-          "Count": 3,
-          "Average": -50.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your current income, you might want to reconsider the frequency of your dining out and electronics purchases. Reducing these can help you save more for future needs."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1000.0,
-          "Count": 2,
-          "Average": 500.0
-        },
-        "Groceries": {
-          "Total": -300.0,
-          "Count": 4,
-          "Average": -75.0
-        },
-        "Health & Fitness": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        },
-        "Entertainment": {
-          "Total": -150.0,
-          "Count": 3,
-          "Average": -50.0
-        },
-        "Transportation": {
-          "Total": -50.0,
-          "Count": 2,
-          "Average": -25.0
-        }
-      }
-    },
-    "response": "###Response:\nConsidering your income, you might want to review your spending on entertainment. Perhaps look for more affordable or free entertainment options to improve your savings."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Is my spending on utilities too high?",
       "bankstatement": {
         "Income": {
           "Total": 1800.0,
-          "Count": 3,
-          "Average": 600.0
-        },
-        "Home Maintenance": {
-          "Total": -400.0,
-          "Count": 2,
-          "Average": -200.0
-        },
-        "Pets": {
-          "Total": -150.0,
-          "Count": 3,
-          "Average": -50.0
-        },
-        "Books & Learning": {
-          "Total": -100.0,
-          "Count": 4,
-          "Average": -25.0
-        },
-        "Medical": {
-          "Total": -200.0,
           "Count": 1,
-          "Average": -200.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your current income and expenses, it might be beneficial to review your spending on home maintenance and medical. If possible, look for alternatives or discounts in these areas to improve your financial health."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1500.0,
-          "Count": 2,
-          "Average": 750.0
+          "Average": 1800.0
         },
-        "Mortgage": {
+        "Rent & Mortgage": {
           "Total": -900.0,
           "Count": 1,
           "Average": -900.0
         },
-        "Insurance": {
+        "Food & Beverage": {
+          "Total": -250.0,
+          "Count": 12,
+          "Average": -20.83
+        },
+        "Entertainment": {
           "Total": -100.0,
-          "Count": 2,
+          "Count": 4,
+          "Average": -25.0
+        },
+        "Transportation": {
+          "Total": -120.0,
+          "Count": 5,
+          "Average": -24.0
+        },
+        "Utilities": {
+          "Total": -200.0,
+          "Count": 4,
           "Average": -50.0
         },
-        "Online Services": {
-          "Total": -60.0,
-          "Count": 4,
-          "Average": -15.0
-        },
-        "Leisure Activities": {
+        "Healthcare": {
           "Total": -80.0,
           "Count": 2,
           "Average": -40.0
         }
       }
     },
-    "response": "###Response:\nGiven your income, you might consider reviewing your spending on leisure activities and online services. Reducing expenses in these areas can help you save more."
+    "response": "###Response:\nYour utility expenses average $50 per transaction, which seems a bit high. It might be worth reviewing your utility providers or considering energy-saving measures to reduce these costs."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "How can I save more on transportation?",
       "bankstatement": {
         "Income": {
-          "Total": 800.0,
+          "Total": 1600.0,
           "Count": 1,
-          "Average": 800.0
+          "Average": 1600.0
         },
-        "Rent": {
-          "Total": -500.0,
+        "Rent & Mortgage": {
+          "Total": -850.0,
           "Count": 1,
-          "Average": -500.0
+          "Average": -850.0
         },
-        "Personal Care": {
-          "Total": -60.0,
-          "Count": 3,
+        "Food & Beverage": {
+          "Total": -180.0,
+          "Count": 9,
           "Average": -20.0
         },
-        "Electronics": {
-          "Total": -120.0,
-          "Count": 1,
-          "Average": -120.0
-        }
-      }
-    },
-    "response": "###Response:\nWith your current income, it might be wise to limit spending on electronics and personal care items. This can help you allocate more funds to essential expenses or savings."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 2000.0,
-          "Count": 2,
-          "Average": 1000.0
-        },
-        "Car Payments": {
-          "Total": -300.0,
-          "Count": 1,
-          "Average": -300.0
-        },
-        "Vacations": {
-          "Total": -400.0,
-          "Count": 1,
-          "Average": -400.0
-        },
-        "Utilities": {
-          "Total": -150.0,
+        "Entertainment": {
+          "Total": -90.0,
           "Count": 3,
-          "Average": -50.0
-        }
-      }
-    },
-    "response": "###Response:\nConsidering your income, you might want to re-evaluate your spending on vacations. Allocating a budget for vacations and sticking to it can help improve your financial situation."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1000.0,
-          "Count": 1,
-          "Average": 1000.0
-        },
-        "Groceries": {
-          "Total": -250.0,
-          "Count": 4,
-          "Average": -62.5
+          "Average": -30.0
         },
         "Transportation": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        },
-        "Dining Out": {
           "Total": -150.0,
+          "Count": 6,
+          "Average": -25.0
+        },
+        "Utilities": {
+          "Total": -70.0,
           "Count": 3,
-          "Average": -50.0
+          "Average": -23.33
+        },
+        "Shopping": {
+          "Total": -100.0,
+          "Count": 4,
+          "Average": -25.0
         }
       }
     },
-    "response": "###Response:\nWith your current income, you might consider cutting back on dining out. Preparing meals at home can be more cost-effective and can help you save more money."
+    "response": "###Response:\nYour transportation costs average $25 per transaction. Consider using public transit, carpooling, or even biking to places nearby. This can help reduce your transportation expenses."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Am I spending too much on shopping?",
       "bankstatement": {
         "Income": {
-          "Total": 2500.0,
-          "Count": 2,
-          "Average": 1250.0
+          "Total": 2200.0,
+          "Count": 1,
+          "Average": 2200.0
         },
-        "Home Repairs": {
-          "Total": -500.0,
-          "Count": 2,
-          "Average": -250.0
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
         },
-        "Hobbies": {
+        "Food & Beverage": {
+          "Total": -220.0,
+          "Count": 11,
+          "Average": -20.0
+        },
+        "Entertainment": {
+          "Total": -130.0,
+          "Count": 5,
+          "Average": -26.0
+        },
+        "Transportation": {
+          "Total": -140.0,
+          "Count": 5,
+          "Average": -28.0
+        },
+        "Utilities": {
+          "Total": -90.0,
+          "Count": 3,
+          "Average": -30.0
+        },
+        "Shopping": {
+          "Total": -300.0,
+          "Count": 6,
+          "Average": -50.0
+        }
+      }
+    },
+    "response": "###Response:\nYour shopping expenses average $50 per transaction, which is a significant portion of your monthly income. It might be a good idea to set a budget for shopping and stick to it to ensure you're not overspending."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I reduce my food & beverage expenses?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1900.0,
+          "Count": 1,
+          "Average": 1900.0
+        },
+        "Rent & Mortgage": {
+          "Total": -950.0,
+          "Count": 1,
+          "Average": -950.0
+        },
+        "Food & Beverage": {
+          "Total": -300.0,
+          "Count": 15,
+          "Average": -20.0
+        },
+        "Entertainment": {
+          "Total": -110.0,
+          "Count": 4,
+          "Average": -27.5
+        },
+        "Transportation": {
+          "Total": -130.0,
+          "Count": 5,
+          "Average": -26.0
+        },
+        "Utilities": {
+          "Total": -85.0,
+          "Count": 3,
+          "Average": -28.33
+        },
+        "Healthcare": {
+          "Total": -75.0,
+          "Count": 2,
+          "Average": -37.5
+        }
+      }
+    },
+    "response": "###Response:\nYour food & beverage expenses average $20 per transaction. Consider cooking at home more often, buying in bulk, or looking for deals and discounts at local stores to reduce these costs."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Are my healthcare expenses normal?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2100.0,
+          "Count": 1,
+          "Average": 2100.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1050.0,
+          "Count": 1,
+          "Average": -1050.0
+        },
+        "Food & Beverage": {
+          "Total": -230.0,
+          "Count": 12,
+          "Average": -19.17
+        },
+        "Entertainment": {
+          "Total": -120.0,
+          "Count": 5,
+          "Average": -24.0
+        },
+        "Transportation": {
+          "Total": -140.0,
+          "Count": 6,
+          "Average": -23.33
+        },
+        "Utilities": {
+          "Total": -95.0,
+          "Count": 4,
+          "Average": -23.75
+        },
+        "Healthcare": {
           "Total": -200.0,
           "Count": 3,
           "Average": -66.67
-        },
-        "Medical": {
-          "Total": -300.0,
-          "Count": 2,
-          "Average": -150.0
         }
       }
     },
-    "response": "###Response:\nGiven your income, it might be beneficial to set aside a budget for home repairs and hobbies. This way, you can manage your expenses better and allocate funds for savings or other essential needs."
+    "response": "###Response:\nYour healthcare expenses average $66.67 per transaction. While healthcare costs can vary widely based on individual needs, it's always a good idea to review your medical bills for any discrepancies and ensure you're using insurance benefits effectively."
   },
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "How can I allocate my budget better?",
       "bankstatement": {
         "Income": {
-          "Total": 1500.0,
-          "Count": 3,
-          "Average": 500.0
+          "Total": 1800.0,
+          "Count": 1,
+          "Average": 1800.0
         },
-        "Mortgage": {
+        "Rent & Mortgage": {
           "Total": -900.0,
           "Count": 1,
           "Average": -900.0
         },
-        "Vacations": {
-          "Total": -200.0,
-          "Count": 2,
-          "Average": -100.0
+        "Food & Beverage": {
+          "Total": -250.0,
+          "Count": 12,
+          "Average": -20.83
         },
-        "Insurance": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        },
-        "Online Shopping": {
-          "Total": -150.0,
+        "Entertainment": {
+          "Total": -120.0,
           "Count": 4,
-          "Average": -37.5
-        }
-      }
-    },
-    "response": "###Response:\nGiven your income, you might consider reducing your online shopping expenses and re-evaluate the frequency of your vacations. This can help you save more each month."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 800.0,
-          "Count": 2,
-          "Average": 400.0
-        },
-        "Rent": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
-        },
-        "Cable & Internet": {
-          "Total": -60.0,
-          "Count": 1,
-          "Average": -60.0
-        },
-        "Cell Phone": {
-          "Total": -40.0,
-          "Count": 1,
-          "Average": -40.0
-        },
-        "Gym Membership": {
-          "Total": -30.0,
-          "Count": 1,
           "Average": -30.0
-        }
-      }
-    },
-    "response": "###Response:\nConsidering your income, you might want to evaluate the necessity of your gym membership and explore cheaper alternatives for cable and internet to save more."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 2000.0,
-          "Count": 1,
-          "Average": 2000.0
-        },
-        "Car Loan": {
-          "Total": -300.0,
-          "Count": 1,
-          "Average": -300.0
-        },
-        "Dining": {
-          "Total": -250.0,
-          "Count": 5,
-          "Average": -50.0
-        },
-        "Entertainment": {
-          "Total": -150.0,
-          "Count": 3,
-          "Average": -50.0
-        },
-        "Utilities": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        }
-      }
-    },
-    "response": "###Response:\nWith your current income, you might consider cutting back on dining out and entertainment expenses. Allocating these funds towards your car loan or savings can be more beneficial in the long run."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1000.0,
-          "Count": 2,
-          "Average": 500.0
-        },
-        "Groceries": {
-          "Total": -200.0,
-          "Count": 4,
-          "Average": -50.0
         },
         "Transportation": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        },
-        "Medical Bills": {
           "Total": -150.0,
-          "Count": 2,
-          "Average": -75.0
+          "Count": 5,
+          "Average": -30.0
         },
-        "Clothing": {
-          "Total": -50.0,
-          "Count": 2,
-          "Average": -25.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your income, it might be wise to set a budget for groceries and clothing. Additionally, consider seeking insurance or payment plans to manage your medical bills more effectively."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 2500.0,
-          "Count": 1,
-          "Average": 2500.0
-        },
-        "Housing": {
-          "Total": -1000.0,
-          "Count": 1,
-          "Average": -1000.0
-        },
-        "Savings": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
-        },
-        "Investments": {
-          "Total": -300.0,
-          "Count": 1,
-          "Average": -300.0
-        },
-        "Recreation": {
-          "Total": -200.0,
-          "Count": 2,
-          "Average": -100.0
-        }
-      }
-    },
-    "response": "###Response:\nYour spending on housing and savings seems appropriate given your income. However, you might want to set a budget for recreation and consider increasing your investments to grow your wealth over time."
-  },
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1500.0,
-          "Count": 1,
-          "Average": 1500.0
-        },
-        "Mortgage": {
-          "Total": -900.0,
-          "Count": 1,
-          "Average": -900.0
-        },
-        "Insurance": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        },
-        "Online Services": {
-          "Total": -60.0,
+        "Utilities": {
+          "Total": -70.0,
           "Count": 3,
-          "Average": -20.0
+          "Average": -23.33
         },
-        "Gas & Fuel": {
+        "Healthcare": {
           "Total": -80.0,
-          "Count": 4,
-          "Average": -20.0
+          "Count": 2,
+          "Average": -40.0
         }
       }
     },
-    "response": "###Response:\nConsidering your income, you might want to review your spending on online services. Perhaps there are subscriptions you no longer need or can find at a cheaper rate."
+    "response": "###Response:\nYou might consider reducing the frequency of dining out to save on the 'Food & Beverage' category. Additionally, exploring more affordable transportation options or carpooling can help cut down on transportation costs."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Is my spending on utilities high?",
       "bankstatement": {
         "Income": {
-          "Total": 800.0,
-          "Count": 2,
-          "Average": 400.0
-        },
-        "Rent": {
-          "Total": -500.0,
+          "Total": 2200.0,
           "Count": 1,
-          "Average": -500.0
+          "Average": 2200.0
         },
-        "Cell Phone": {
-          "Total": -60.0,
+        "Rent & Mortgage": {
+          "Total": -1100.0,
           "Count": 1,
-          "Average": -60.0
+          "Average": -1100.0
         },
-        "Groceries": {
-          "Total": -150.0,
-          "Count": 4,
-          "Average": -37.5
-        },
-        "Personal Care": {
-          "Total": -40.0,
-          "Count": 2,
-          "Average": -20.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your current income, you might want to monitor your grocery spending. Consider buying in bulk or looking for sales to save more."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 2000.0,
-          "Count": 1,
-          "Average": 2000.0
-        },
-        "Car Loan": {
-          "Total": -300.0,
-          "Count": 1,
-          "Average": -300.0
-        },
-        "Dining Out": {
-          "Total": -250.0,
-          "Count": 5,
-          "Average": -50.0
+        "Food & Beverage": {
+          "Total": -180.0,
+          "Count": 8,
+          "Average": -22.5
         },
         "Entertainment": {
-          "Total": -150.0,
+          "Total": -90.0,
           "Count": 3,
-          "Average": -50.0
+          "Average": -30.0
+        },
+        "Transportation": {
+          "Total": -130.0,
+          "Count": 4,
+          "Average": -32.5
         },
         "Utilities": {
           "Total": -200.0,
           "Count": 4,
           "Average": -50.0
-        }
-      }
-    },
-    "response": "###Response:\nWith your income, you could benefit from reducing your dining out and entertainment expenses. Consider home-cooked meals or finding free entertainment options."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1000.0,
-          "Count": 1,
-          "Average": 1000.0
-        },
-        "Health Insurance": {
-          "Total": -200.0,
-          "Count": 1,
-          "Average": -200.0
-        },
-        "Transportation": {
-          "Total": -100.0,
-          "Count": 4,
-          "Average": -25.0
         },
         "Shopping": {
           "Total": -150.0,
           "Count": 3,
           "Average": -50.0
-        },
-        "Gifts & Donations": {
-          "Total": -50.0,
-          "Count": 2,
-          "Average": -25.0
         }
       }
     },
-    "response": "###Response:\nGiven your income, it might be wise to cut back on shopping expenses. Consider setting a monthly budget for discretionary spending to better manage your finances."
+    "response": "###Response:\nYour spending on utilities averages to $50 per transaction, which seems a bit high relative to your income. It might be worth reviewing your utility providers or considering energy-saving measures to reduce costs."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Should I cut back on shopping?",
       "bankstatement": {
         "Income": {
-          "Total": 2500.0,
-          "Count": 2,
-          "Average": 1250.0
-        },
-        "Mortgage": {
-          "Total": -1200.0,
+          "Total": 1600.0,
           "Count": 1,
-          "Average": -1200.0
+          "Average": 1600.0
         },
-        "Vacations": {
-          "Total": -500.0,
+        "Rent & Mortgage": {
+          "Total": -800.0,
           "Count": 1,
-          "Average": -500.0
+          "Average": -800.0
         },
-        "Electronics": {
-          "Total": -300.0,
-          "Count": 2,
-          "Average": -150.0
+        "Food & Beverage": {
+          "Total": -220.0,
+          "Count": 11,
+          "Average": -20.0
         },
-        "Books & Learning": {
-          "Total": -100.0,
-          "Count": 4,
-          "Average": -25.0
-        }
-      }
-    },
-    "response": "###Response:\nWith your current income, you might want to reconsider the frequency and cost of vacations and electronics purchases. Allocating a set budget for these categories can help you save more in the long run."
-  },
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1500.0,
+        "Entertainment": {
+          "Total": -70.0,
           "Count": 3,
-          "Average": 500.0
-        },
-        "Mortgage": {
-          "Total": -1000.0,
-          "Count": 1,
-          "Average": -1000.0
-        },
-        "Insurance": {
-          "Total": -150.0,
-          "Count": 2,
-          "Average": -75.0
-        },
-        "Online Services": {
-          "Total": -60.0,
-          "Count": 4,
-          "Average": -15.0
-        },
-        "Personal Care": {
-          "Total": -90.0,
-          "Count": 3,
-          "Average": -30.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your income, you might want to reconsider the number of online services you're subscribed to. Reducing or consolidating these can help you save more each month."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 800.0,
-          "Count": 2,
-          "Average": 400.0
-        },
-        "Rent": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
-        },
-        "Gym Membership": {
-          "Total": -50.0,
-          "Count": 1,
-          "Average": -50.0
-        },
-        "Music & Streaming": {
-          "Total": -30.0,
-          "Count": 3,
-          "Average": -10.0
+          "Average": -23.33
         },
         "Transportation": {
-          "Total": -100.0,
+          "Total": -90.0,
           "Count": 4,
-          "Average": -25.0
-        }
-      }
-    },
-    "response": "###Response:\nConsidering your monthly income, you might want to evaluate the necessity of your gym membership and music & streaming subscriptions. Perhaps, you can find more affordable alternatives or promotions."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 2000.0,
-          "Count": 2,
-          "Average": 1000.0
-        },
-        "Car Loan": {
-          "Total": -400.0,
-          "Count": 1,
-          "Average": -400.0
-        },
-        "Dining Out": {
-          "Total": -250.0,
-          "Count": 5,
-          "Average": -50.0
-        },
-        "Groceries": {
-          "Total": -300.0,
-          "Count": 4,
-          "Average": -75.0
+          "Average": -22.5
         },
         "Utilities": {
-          "Total": -150.0,
-          "Count": 3,
+          "Total": -60.0,
+          "Count": 2,
+          "Average": -30.0
+        },
+        "Shopping": {
+          "Total": -300.0,
+          "Count": 6,
           "Average": -50.0
         }
       }
     },
-    "response": "###Response:\nWith your current income, you might want to cut back on dining out. Preparing meals at home using your groceries can be a more cost-effective way to manage your food expenses."
+    "response": "###Response:\nYour shopping expenses are quite significant compared to your other categories. It might be a good idea to review your shopping habits and prioritize essential purchases to save more."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Am I spending too much on entertainment?",
       "bankstatement": {
         "Income": {
           "Total": 2500.0,
           "Count": 1,
           "Average": 2500.0
         },
-        "Vacations": {
-          "Total": -600.0,
+        "Rent & Mortgage": {
+          "Total": -1300.0,
           "Count": 1,
-          "Average": -600.0
+          "Average": -1300.0
         },
-        "Electronics": {
+        "Food & Beverage": {
+          "Total": -240.0,
+          "Count": 12,
+          "Average": -20.0
+        },
+        "Entertainment": {
           "Total": -400.0,
-          "Count": 2,
-          "Average": -200.0
+          "Count": 8,
+          "Average": -50.0
         },
-        "Home Improvement": {
-          "Total": -350.0,
+        "Transportation": {
+          "Total": -150.0,
+          "Count": 5,
+          "Average": -30.0
+        },
+        "Utilities": {
+          "Total": -90.0,
           "Count": 3,
-          "Average": -116.67
+          "Average": -30.0
         },
-        "Savings": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
+        "Healthcare": {
+          "Total": -120.0,
+          "Count": 2,
+          "Average": -60.0
         }
       }
     },
-    "response": "###Response:\nGiven your income, it's great to see you're saving. However, you might want to review your spending on electronics and home improvement. Prioritizing essential upgrades and looking for deals can help you save more."
+    "response": "###Response:\nYour entertainment expenses are relatively high, averaging $50 per transaction. If you're looking to save, consider cutting back on non-essential entertainment or seeking more affordable alternatives."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "How can I save more on transportation?",
       "bankstatement": {
         "Income": {
-          "Total": 1000.0,
+          "Total": 1900.0,
           "Count": 1,
-          "Average": 1000.0
+          "Average": 1900.0
         },
-        "Health & Fitness": {
-          "Total": -150.0,
-          "Count": 3,
-          "Average": -50.0
+        "Rent & Mortgage": {
+          "Total": -950.0,
+          "Count": 1,
+          "Average": -950.0
         },
-        "Books & Learning": {
-          "Total": -50.0,
-          "Count": 5,
-          "Average": -10.0
+        "Food & Beverage": {
+          "Total": -210.0,
+          "Count": 10,
+          "Average": -21.0
+        },
+        "Entertainment": {
+          "Total": -110.0,
+          "Count": 4,
+          "Average": -27.5
         },
         "Transportation": {
           "Total": -200.0,
-          "Count": 4,
-          "Average": -50.0
+          "Count": 6,
+          "Average": -33.33
         },
         "Utilities": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        }
-      }
-    },
-    "response": "###Response:\nWith your current income, you might want to re-evaluate your transportation expenses. Consider carpooling, using public transport, or other cost-effective alternatives to reduce this category."
-  },
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 750.0,
-          "Count": 1,
-          "Average": 750.0
-        },
-        "Rent & Mortgage": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
-        },
-        "Insurance": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
-        },
-        "Personal Care": {
-          "Total": -40.0,
-          "Count": 3,
-          "Average": -13.33
-        },
-        "Entertainment": {
-          "Total": -60.0,
-          "Count": 2,
-          "Average": -30.0
-        }
-      }
-    },
-    "response": "###Response:\nTo improve your spending, consider evaluating your entertainment and personal care expenses. Finding alternatives or cutting back slightly in these areas can help you save more."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1100.0,
-          "Count": 2,
-          "Average": 550.0
-        },
-        "Groceries": {
-          "Total": -200.0,
-          "Count": 4,
-          "Average": -50.0
-        },
-        "Gas & Fuel": {
           "Total": -80.0,
           "Count": 3,
           "Average": -26.67
         },
-        "Online Services": {
+        "Education": {
+          "Total": -100.0,
+          "Count": 2,
+          "Average": -50.0
+        }
+      }
+    },
+    "response": "###Response:\nYour transportation costs average to $33.33 per transaction. Consider using public transportation, carpooling, or even biking to certain destinations to reduce these expenses."
+  },
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Is my rent too high?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1800.0,
+          "Count": 1,
+          "Average": 1800.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1300.0,
+          "Count": 1,
+          "Average": -1300.0
+        },
+        "Food & Beverage": {
+          "Total": -150.0,
+          "Count": 7,
+          "Average": -21.43
+        },
+        "Entertainment": {
+          "Total": -70.0,
+          "Count": 4,
+          "Average": -17.5
+        },
+        "Transportation": {
+          "Total": -90.0,
+          "Count": 4,
+          "Average": -22.5
+        },
+        "Utilities": {
+          "Total": -60.0,
+          "Count": 3,
+          "Average": -20.0
+        },
+        "Healthcare": {
           "Total": -50.0,
           "Count": 2,
           "Average": -25.0
+        }
+      }
+    },
+    "response": "###Response:\nYour rent accounts for over 70% of your income, which is quite high. It's generally recommended that rent should be around 30% of your income. You might want to consider relocating to a more affordable place."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I save more on utilities?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2200.0,
+          "Count": 1,
+          "Average": 2200.0
         },
-        "Dining Out": {
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
+        },
+        "Food & Beverage": {
+          "Total": -200.0,
+          "Count": 8,
+          "Average": -25.0
+        },
+        "Entertainment": {
           "Total": -100.0,
+          "Count": 5,
+          "Average": -20.0
+        },
+        "Transportation": {
+          "Total": -150.0,
+          "Count": 5,
+          "Average": -30.0
+        },
+        "Utilities": {
+          "Total": -250.0,
+          "Count": 4,
+          "Average": -62.5
+        },
+        "Shopping": {
+          "Total": -150.0,
           "Count": 3,
+          "Average": -50.0
+        }
+      }
+    },
+    "response": "###Response:\nYour utilities seem a bit high. Consider energy-saving measures like using LED bulbs, unplugging devices when not in use, and checking for any leaks or inefficiencies in your home. This can help reduce your utility bills."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Am I spending too much on shopping?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2500.0,
+          "Count": 1,
+          "Average": 2500.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1200.0,
+          "Count": 1,
+          "Average": -1200.0
+        },
+        "Food & Beverage": {
+          "Total": -220.0,
+          "Count": 9,
+          "Average": -24.44
+        },
+        "Entertainment": {
+          "Total": -110.0,
+          "Count": 5,
+          "Average": -22.0
+        },
+        "Transportation": {
+          "Total": -180.0,
+          "Count": 6,
+          "Average": -30.0
+        },
+        "Utilities": {
+          "Total": -90.0,
+          "Count": 3,
+          "Average": -30.0
+        },
+        "Shopping": {
+          "Total": -500.0,
+          "Count": 4,
+          "Average": -125.0
+        }
+      }
+    },
+    "response": "###Response:\nYour shopping expenses account for 20% of your income. It's essential to evaluate if these purchases are necessary or if you can cut back. Setting a monthly shopping budget might help you control this spending."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How's my transportation cost?",
+      "bankstatement": {
+        "Income": {
+          "Total": 3000.0,
+          "Count": 1,
+          "Average": 3000.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1400.0,
+          "Count": 1,
+          "Average": -1400.0
+        },
+        "Food & Beverage": {
+          "Total": -250.0,
+          "Count": 10,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -150.0,
+          "Count": 6,
+          "Average": -25.0
+        },
+        "Transportation": {
+          "Total": -600.0,
+          "Count": 8,
+          "Average": -75.0
+        },
+        "Utilities": {
+          "Total": -120.0,
+          "Count": 4,
+          "Average": -30.0
+        },
+        "Healthcare": {
+          "Total": -80.0,
+          "Count": 2,
+          "Average": -40.0
+        }
+      }
+    },
+    "response": "###Response:\nYour transportation costs are relatively high, accounting for 20% of your income. If possible, consider alternatives like carpooling, public transportation, or even biking to reduce these expenses."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Do I need to adjust my entertainment spending?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2800.0,
+          "Count": 1,
+          "Average": 2800.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1300.0,
+          "Count": 1,
+          "Average": -1300.0
+        },
+        "Food & Beverage": {
+          "Total": -240.0,
+          "Count": 8,
+          "Average": -30.0
+        },
+        "Entertainment": {
+          "Total": -400.0,
+          "Count": 7,
+          "Average": -57.14
+        },
+        "Transportation": {
+          "Total": -200.0,
+          "Count": 5,
+          "Average": -40.0
+        },
+        "Utilities": {
+          "Total": -110.0,
+          "Count": 3,
+          "Average": -36.67
+        },
+        "Education": {
+          "Total": -150.0,
+          "Count": 2,
+          "Average": -75.0
+        }
+      }
+    },
+    "response": "###Response:\nYour entertainment spending is quite high, taking up around 14% of your income. It might be worthwhile to set a budget for entertainment and look for cost-effective ways to enjoy your leisure time."
+  },
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Is my rent too high?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1800.0,
+          "Count": 1,
+          "Average": 1800.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1300.0,
+          "Count": 1,
+          "Average": -1300.0
+        },
+        "Food & Beverage": {
+          "Total": -150.0,
+          "Count": 7,
+          "Average": -21.43
+        },
+        "Entertainment": {
+          "Total": -90.0,
+          "Count": 4,
+          "Average": -22.5
+        },
+        "Transportation": {
+          "Total": -100.0,
+          "Count": 5,
+          "Average": -20.0
+        },
+        "Utilities": {
+          "Total": -60.0,
+          "Count": 3,
+          "Average": -20.0
+        }
+      }
+    },
+    "response": "###Response:\nYour rent accounts for over 70% of your income, which is quite high. It's generally recommended that rent should be around 30% of your income. You might want to consider a more affordable housing option."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I save on utilities?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2200.0,
+          "Count": 1,
+          "Average": 2200.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
+        },
+        "Utilities": {
+          "Total": -200.0,
+          "Count": 4,
+          "Average": -50.0
+        },
+        "Groceries": {
+          "Total": -300.0,
+          "Count": 10,
+          "Average": -30.0
+        },
+        "Entertainment": {
+          "Total": -150.0,
+          "Count": 5,
+          "Average": -30.0
+        }
+      }
+    },
+    "response": "###Response:\nYour utilities average $50 per transaction. Consider energy-saving measures like using energy-efficient appliances, unplugging devices when not in use, and monitoring heating and cooling to reduce costs."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Am I spending too much on entertainment?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2500.0,
+          "Count": 1,
+          "Average": 2500.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1200.0,
+          "Count": 1,
+          "Average": -1200.0
+        },
+        "Entertainment": {
+          "Total": -500.0,
+          "Count": 10,
+          "Average": -50.0
+        },
+        "Food & Beverage": {
+          "Total": -400.0,
+          "Count": 12,
+          "Average": -33.33
+        },
+        "Transportation": {
+          "Total": -200.0,
+          "Count": 6,
           "Average": -33.33
         }
       }
     },
-    "response": "###Response:\nTo better manage your finances, you might want to monitor your spending on groceries and dining out. Consider preparing meals at home more often or looking for discounts when shopping."
+    "response": "###Response:\nYou're spending 20% of your income on entertainment. While leisure is essential, you might want to evaluate if some of these expenses can be reduced or if there are more cost-effective entertainment options available."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "How can I cut back on transportation costs?",
       "bankstatement": {
         "Income": {
-          "Total": 950.0,
+          "Total": 3000.0,
           "Count": 1,
-          "Average": 950.0
+          "Average": 3000.0
         },
-        "Phone & Internet": {
-          "Total": -100.0,
-          "Count": 2,
-          "Average": -50.0
+        "Rent & Mortgage": {
+          "Total": -1400.0,
+          "Count": 1,
+          "Average": -1400.0
         },
         "Transportation": {
-          "Total": -70.0,
-          "Count": 3,
-          "Average": -23.33
-        },
-        "Health & Fitness": {
-          "Total": -50.0,
-          "Count": 2,
-          "Average": -25.0
-        },
-        "Gifts & Donations": {
-          "Total": -30.0,
-          "Count": 1,
-          "Average": -30.0
-        }
-      }
-    },
-    "response": "###Response:\nTo optimize your spending, you might want to review your expenses on phone & internet and transportation. Consider switching to more affordable plans or using public transport occasionally."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 800.0,
-          "Count": 1,
-          "Average": 800.0
-        },
-        "Electronics": {
-          "Total": -150.0,
-          "Count": 1,
-          "Average": -150.0
-        },
-        "Books & Learning": {
-          "Total": -40.0,
-          "Count": 3,
-          "Average": -13.33
-        },
-        "Subscriptions": {
-          "Total": -60.0,
-          "Count": 2,
-          "Average": -30.0
-        },
-        "Hobbies": {
-          "Total": -50.0,
-          "Count": 2,
-          "Average": -25.0
-        }
-      }
-    },
-    "response": "###Response:\nTo enhance your financial health, consider cutting back on electronics purchases and re-evaluating your subscriptions. It might be worth checking if there are any subscriptions you no longer use or need."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 700.0,
-          "Count": 1,
-          "Average": 700.0
-        },
-        "Pets": {
-          "Total": -50.0,
-          "Count": 2,
-          "Average": -25.0
-        },
-        "Medical": {
-          "Total": -100.0,
-          "Count": 1,
-          "Average": -100.0
-        },
-        "Utilities": {
-          "Total": -80.0,
-          "Count": 2,
-          "Average": -40.0
-        },
-        "Travel": {
-          "Total": -120.0,
-          "Count": 1,
-          "Average": -120.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your current income and expenses, it might be beneficial to review your spending on travel and medical. If possible, look for alternatives or discounts in these areas to improve your financial health."
-  },
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1500.0,
-          "Count": 2,
-          "Average": 750.0
-        },
-        "Mortgage": {
-          "Total": -900.0,
-          "Count": 1,
-          "Average": -900.0
-        },
-        "Online Services": {
-          "Total": -60.0,
-          "Count": 4,
-          "Average": -15.0
-        },
-        "Car Maintenance": {
-          "Total": -120.0,
-          "Count": 2,
-          "Average": -60.0
-        },
-        "Insurance": {
-          "Total": -100.0,
-          "Count": 1,
-          "Average": -100.0
-        }
-      }
-    },
-    "response": "###Response:\nGiven your income, you might consider reviewing your spending on car maintenance and online services. Perhaps there are subscriptions you no longer need or maintenance tasks that can be done less frequently."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 800.0,
-          "Count": 1,
-          "Average": 800.0
-        },
-        "Rent": {
-          "Total": -500.0,
-          "Count": 1,
-          "Average": -500.0
-        },
-        "Mobile & Internet": {
-          "Total": -80.0,
-          "Count": 2,
-          "Average": -40.0
-        },
-        "Personal Care": {
-          "Total": -60.0,
-          "Count": 3,
-          "Average": -20.0
-        },
-        "Savings": {
-          "Total": -50.0,
-          "Count": 1,
-          "Average": -50.0
-        }
-      }
-    },
-    "response": "###Response:\nConsidering your income, you might want to increase your savings. You can do this by cutting back on personal care expenses or renegotiating your mobile and internet plans."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 1100.0,
-          "Count": 2,
-          "Average": 550.0
-        },
-        "Utilities": {
-          "Total": -150.0,
-          "Count": 3,
-          "Average": -50.0
-        },
-        "Dining Out": {
-          "Total": -100.0,
-          "Count": 4,
-          "Average": -25.0
-        },
-        "Transportation": {
-          "Total": -70.0,
-          "Count": 3,
-          "Average": -23.33
-        },
-        "Health": {
-          "Total": -80.0,
-          "Count": 2,
-          "Average": -40.0
-        }
-      }
-    },
-    "response": "###Response:\nWith your current income, it might be beneficial to cut back on dining out and review your transportation costs. Perhaps consider cooking at home more often or using public transportation to save money."
-  },
-
-  {
-    "inputs": {
-      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
-      "bankstatement": {
-        "Income": {
-          "Total": 2000.0,
-          "Count": 1,
-          "Average": 2000.0
-        },
-        "Vacations": {
-          "Total": -400.0,
-          "Count": 1,
-          "Average": -400.0
-        },
-        "Electronics": {
-          "Total": -300.0,
-          "Count": 2,
-          "Average": -150.0
+          "Total": -600.0,
+          "Count": 8,
+          "Average": -75.0
         },
         "Groceries": {
+          "Total": -500.0,
+          "Count": 10,
+          "Average": -50.0
+        },
+        "Utilities": {
           "Total": -250.0,
           "Count": 5,
           "Average": -50.0
-        },
-        "Hobbies": {
-          "Total": -150.0,
-          "Count": 3,
-          "Average": -50.0
         }
       }
     },
-    "response": "###Response:\nGiven your income, you have a good amount of discretionary spending. However, you might want to review your spending on vacations and electronics. Consider setting a budget for these categories to ensure you're not overspending."
+    "response": "###Response:\nYour transportation costs are averaging $75 per transaction. Consider using public transportation, carpooling, or even biking to work if feasible. Regular vehicle maintenance can also help in fuel efficiency, reducing costs in the long run."
   },
 
   {
     "inputs": {
       "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
-      "question": "What can I do to improve my spending ?",
+      "question": "Should I allocate more for groceries?",
       "bankstatement": {
         "Income": {
-          "Total": 1700.0,
-          "Count": 2,
-          "Average": 850.0
+          "Total": 2800.0,
+          "Count": 1,
+          "Average": 2800.0
         },
-        "Home Maintenance": {
-          "Total": -200.0,
-          "Count": 2,
-          "Average": -100.0
+        "Rent & Mortgage": {
+          "Total": -1300.0,
+          "Count": 1,
+          "Average": -1300.0
         },
-        "Pets": {
-          "Total": -100.0,
-          "Count": 2,
+        "Groceries": {
+          "Total": -350.0,
+          "Count": 7,
           "Average": -50.0
         },
-        "Books & Learning": {
-          "Total": -60.0,
-          "Count": 3,
-          "Average": -20.0
+        "Entertainment": {
+          "Total": -400.0,
+          "Count": 8,
+          "Average": -50.0
         },
-        "Medical": {
-          "Total": -250.0,
-          "Count": 1,
-          "Average": -250.0
+        "Utilities": {
+          "Total": -300.0,
+          "Count": 6,
+          "Average": -50.0
         }
       }
     },
-    "response": "###Response:\nConsidering your current income and expenses, it might be beneficial to review your spending on home maintenance and medical. Look for alternatives or discounts in these areas to improve your financial health."
+    "response": "###Response:\nYour grocery spending averages $50 per transaction. If you find that you're running out of essentials before the end of the month, it might be worth allocating a bit more to this category, especially if it means eating out less and saving on food & beverage expenses."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Is my rent too high?",
+      "bankstatement": {
+        "Income": {
+          "Total": 1800.0,
+          "Count": 1,
+          "Average": 1800.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1300.0,
+          "Count": 1,
+          "Average": -1300.0
+        },
+        "Food & Beverage": {
+          "Total": -150.0,
+          "Count": 7,
+          "Average": -21.43
+        },
+        "Entertainment": {
+          "Total": -70.0,
+          "Count": 4,
+          "Average": -17.5
+        },
+        "Transportation": {
+          "Total": -90.0,
+          "Count": 4,
+          "Average": -22.5
+        },
+        "Utilities": {
+          "Total": -60.0,
+          "Count": 3,
+          "Average": -20.0
+        }
+      }
+    },
+    "response": "###Response:\nYour rent is taking up a significant portion of your income, accounting for over 70%. Ideally, rent should be around 30% of your income. You might want to consider a more affordable housing option."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How can I save more on utilities?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2200.0,
+          "Count": 1,
+          "Average": 2200.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1100.0,
+          "Count": 1,
+          "Average": -1100.0
+        },
+        "Food & Beverage": {
+          "Total": -200.0,
+          "Count": 8,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -100.0,
+          "Count": 5,
+          "Average": -20.0
+        },
+        "Transportation": {
+          "Total": -150.0,
+          "Count": 5,
+          "Average": -30.0
+        },
+        "Utilities": {
+          "Total": -120.0,
+          "Count": 4,
+          "Average": -30.0
+        }
+      }
+    },
+    "response": "###Response:\nTo save on utilities, consider energy-efficient appliances, unplug devices when not in use, and use LED bulbs. Also, monitor your heating and cooling habits, as these can significantly impact utility bills."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Am I spending too much on transportation?",
+      "bankstatement": {
+        "Income": {
+          "Total": 2500.0,
+          "Count": 1,
+          "Average": 2500.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1200.0,
+          "Count": 1,
+          "Average": -1200.0
+        },
+        "Food & Beverage": {
+          "Total": -220.0,
+          "Count": 9,
+          "Average": -24.44
+        },
+        "Entertainment": {
+          "Total": -130.0,
+          "Count": 6,
+          "Average": -21.67
+        },
+        "Transportation": {
+          "Total": -300.0,
+          "Count": 6,
+          "Average": -50.0
+        },
+        "Utilities": {
+          "Total": -110.0,
+          "Count": 3,
+          "Average": -36.67
+        }
+      }
+    },
+    "response": "###Response:\nYour transportation costs are relatively high, taking up about 12% of your income. Consider alternatives like carpooling, public transportation, or even biking to reduce these expenses."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "How am I doing with my entertainment expenses?",
+      "bankstatement": {
+        "Income": {
+          "Total": 3000.0,
+          "Count": 1,
+          "Average": 3000.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1400.0,
+          "Count": 1,
+          "Average": -1400.0
+        },
+        "Food & Beverage": {
+          "Total": -250.0,
+          "Count": 10,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -400.0,
+          "Count": 8,
+          "Average": -50.0
+        },
+        "Transportation": {
+          "Total": -200.0,
+          "Count": 5,
+          "Average": -40.0
+        },
+        "Utilities": {
+          "Total": -150.0,
+          "Count": 4,
+          "Average": -37.5
+        }
+      }
+    },
+    "response": "###Response:\nYour entertainment expenses are on the higher side, accounting for over 13% of your income. It might be worth reviewing these expenses to see if there are areas where you can cut back without sacrificing your enjoyment."
+  },
+
+  {
+    "inputs": {
+      "instruction": "<s>### Instruction:\nGiven the user bank statement summary, answer the following question providing a tailored answer to their situation and profile </s>",
+      "question": "Should I allocate more for savings?",
+      "bankstatement": {
+        "Income": {
+          "Total": 3500.0,
+          "Count": 1,
+          "Average": 3500.0
+        },
+        "Rent & Mortgage": {
+          "Total": -1500.0,
+          "Count": 1,
+          "Average": -1500.0
+        },
+        "Food & Beverage": {
+          "Total": -300.0,
+          "Count": 12,
+          "Average": -25.0
+        },
+        "Entertainment": {
+          "Total": -250.0,
+          "Count": 7,
+          "Average": -35.71
+        },
+        "Transportation": {
+          "Total": -250.0,
+          "Count": 6,
+          "Average": -41.67
+        },
+        "Utilities": {
+          "Total": -200.0,
+          "Count": 5,
+          "Average": -40.0
+        }
+      }
+    },
+    "response": "###Response:\nAfter all your expenses, you have $1000 left from your income. While this is a good amount, aiming to save at least 30% of your income is a general guideline. Consider reallocating some funds from categories like entertainment to boost your savings."
   }
 ]
 
