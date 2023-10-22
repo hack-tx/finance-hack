@@ -14,7 +14,7 @@ import requests
 
 app = FastAPI()
 
-API_URL = "https://k1iu7ilfceps6loc.us-east-1.aws.endpoints.huggingface.cloud"
+API_URL = "https://yxg3de61fixsgvsc.us-east-1.aws.endpoints.huggingface.cloud"
 headers = {
     "Authorization": "Bearer fhASmeHCrjQohdEgJDWAoWuvfaoiRNwbeXKbzTrWtbLcyELEyUBQGDjhhwSPkOaGqOFAutjxgJYePoNfnzJLklKUUWpOUEKDgOaYwJDJTJQyzPRXXTvAyMsEquCgccku",
     "Content-Type": "application/json"
