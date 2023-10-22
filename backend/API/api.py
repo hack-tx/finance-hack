@@ -48,7 +48,7 @@ def profile_question(profile: ProfileModel):
 
 ### QUESTON:\n How can I access and review these SEC filings? Given the following information: debt: 800, income: 4000/month, expenses: 2000/month, stock_market_knowledge: intermediate, investment_risk: medium, interest_sectors: ['technology', 'communications']
 
-    f"""
+    query = f"""
     ### QUESTON:
     {profile.question} Given the following information: debt: {profile.debt} , income: {profile.income} , expenses: {profile.expenses} , stock_market_knowledge: {profile.stock_market_knowledge} , investment_risk: {profile.investment_risk}, interest_sectors: {profile.interest_sectors} 
 
@@ -60,7 +60,7 @@ def profile_question(profile: ProfileModel):
 
 
     response = requests.post(API_URL, headers=headers, json={
-        #TODO: Fillout prompt
+        "inputs": query
     })
 
     if response.status_code != 200:
