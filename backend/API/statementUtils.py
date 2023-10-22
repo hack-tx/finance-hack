@@ -31,6 +31,8 @@ def process_csv_text_table(filename):
 
 
 def parse_json_to_text(json_data):
+
+    json_data = json.loads(json_data)
     text_data = ""
     for category, stats in json_data.items():
         total = stats['Total']
