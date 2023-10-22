@@ -10,6 +10,7 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
 from pydantic import BaseModel
 from pathlib import Path
+from fastapi.middleware.cors import CORSMiddleware
 import httpx
 from fastapi.responses import JSONResponse
 
@@ -18,6 +19,14 @@ import requests
 import statementUtils
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,  # Allows cookies to be sent and received
+    allow_methods=["*"],  # Allows all HTTP methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 API_URL = "https://yxg3de61fixsgvsc.us-east-1.aws.endpoints.huggingface.cloud"
 headers = {
