@@ -74,6 +74,38 @@ def process_csv(filename):
     print(json_output)
     return json_output
 
+def process_csv_to_json(filename):
+    # Initialize defaultdicts to store sums and counts
+    sums = defaultdict(float)
+    counts = defaultdict(int)
+
+    # Open and read the CSV file
+    with open(filename, 'r') as file:
+        reader = csv.reader(file)
+        header = next(reader)
+
+        # Process each row in the CSV
+        for row in reader:
+            category = row[3]
+            amount = float(row[2])
+            sums[category] += amount
+            counts[category] += 1
+
+    # Calculate averages
+    averages = {category: sums[category] / counts[category] for category in sums}
+
+    # Prepare the results in a dictionary
+    results = {}
+    for category in sums:
+        results[category] = {
+            "Total": sums[category],
+            "Count": counts[category],
+            "Average": averages[category]
+        }
+
+
+    return results
+
 
 
 

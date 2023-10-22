@@ -182,5 +182,5 @@ async def upload_file(file: UploadFile):
 
 @app.get('/get-csv')
 def get_csv():
-    return statementUtils.process_csv('files/transactions.csv')
+    return statementUtils.process_csv_to_json('files/transactions.csv')
     
