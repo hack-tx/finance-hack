@@ -10,6 +10,7 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
 from pydantic import BaseModel
 from pathlib import Path
+import httpx
 import requests
 
 app = FastAPI()
@@ -83,26 +84,28 @@ async def profile_question_2(profile: ProfileModel):
 
     complete_response = ''
 
-    response = await make_post_request(query)
-    output = response.json()
+    while True:
+        response = await make_post_request(query)
+        output = response.json()
 
-    generated_text = output[0]['generated_text']
-    complete_response = complete_response + generated_text
-    if not generated_text.endswith('\n'):
-        new_query = query + generated_text
-        print(new_query)
-        response = await make_post_request(new_query)
-        output = response.json()    
-        complete_response = complete_response + output[0]['generated_text']
+        generated_text = output[0]['generated_text']
+        complete_response += generated_text
+        
+        # Check for punctuation or newline at the end of the generated text
+        if generated_text[-1] in {'.', '!', '?', '\n'}:
+            break
+        
+        query += generated_text  # append the generated text to the query for the next iteration
+
     return {"response": complete_response}
 
 async def make_post_request(query):
-    response = requests.post(API_URL, headers=headers, json={"inputs": query})
+    async with httpx.AsyncClient() as client:
+        response = await client.post(API_URL, headers=headers, json={"inputs": query})
 
     if response.status_code != 200:
         raise HTTPException(status_code=response.status_code, detail=response.text)
     return response
-
 
 
 # TODO: FINISH THIS
