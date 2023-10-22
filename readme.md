@@ -1,3 +1,14 @@
+
+# Money Buddy
+
+### Your very own finance-finetuned LLM, and financial platform for all the financial related stastics and information you need.
+
+
+
+![money-buddy](/images/money-buddy.png)
+![money-buddy-diagram](/images/Money-Buddy-Diagram.png)
+
+
 ### Dataset Utils
 
 1. Fill up GPT-Statement-dataset & GPT-Invesment-dataset
