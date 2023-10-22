@@ -37,7 +37,6 @@ headers = {
 
 class QueryModel(BaseModel):
     inputs: str
-
 class StatementModel(BaseModel):
     question: str
 class ProfileModel(BaseModel):
@@ -51,15 +50,12 @@ class ProfileModelQ(BaseModel):
     question: str
 
 
+#    __ __    __               ____              __  _             
+#   / // /__ / /__  ___ ____  / __/_ _____  ____/ /_(_)__  ___  ___
+#  / _  / -_) / _ \/ -_) __/ / _// // / _ \/ __/ __/ / _ \/ _ \(_-<
+# /_//_/\__/_/ .__/\__/_/   /_/  \_,_/_//_/\__/\__/_/\___/_//_/___/
+#           /_/                                                    
 
-
-
-@app.post("/profile")
-async def create_profile(profile: ProfileModel):
-    data = profile.dict()
-    with open("profile.json", "w") as f:
-        json.dump(data, f, indent=4)
-    return {"message": "Profile data saved successfully"}
 
 def read_profile_data():
     if os.path.exists("profile.json"):
@@ -69,11 +65,33 @@ def read_profile_data():
     else:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No profile data found")
 
+async def make_post_request(query):
+    async with httpx.AsyncClient() as client:
+        response = await client.post(API_URL, headers=headers, json={"inputs": query})
+
+    if response.status_code != 200:
+        raise HTTPException(status_code=response.status_code, detail=response.text)
+    return response
+
+
+#    ____        __          _      __    
+#   / __/__  ___/ /__  ___  (_)__  / /____
+#  / _// _ \/ _  / _ \/ _ \/ / _ \/ __(_-<
+# /___/_//_/\_,_/ .__/\___/_/_//_/\__/___/
+#              /_/                        
+
+
+@app.post("/profile")
+async def create_profile(profile: ProfileModel):
+    data = profile.dict()
+    with open("profile.json", "w") as f:
+        json.dump(data, f, indent=4)
+    return {"message": "Profile data saved successfully"}
+
 @app.get("/get-profile")
 async def get_profile():
     data = read_profile_data()
     return data
-
 
 @app.post('/query-bot')
 def query_bot(item: QueryModel):
@@ -85,15 +103,12 @@ def query_bot(item: QueryModel):
     output = response.json()
     return {"response": output[0]['generated_text']}
 
-
 @app.get('/check-message')
 def check_message():
     if os.path.exists('files/transactions.csv'):
         return JSONResponse(status_code=200, content='okay')
     else:
         return JSONResponse(status_code=404, content='okay')
-
-
 
 @app.post('/profile-question')
 async def profile_question(query: ProfileModelQ):
@@ -124,15 +139,6 @@ async def profile_question(query: ProfileModelQ):
         query += generated_text  # append the generated text to the query for the next iteration
 
     return complete_response.replace('\n', '')
-
-async def make_post_request(query):
-    async with httpx.AsyncClient() as client:
-        response = await client.post(API_URL, headers=headers, json={"inputs": query})
-
-    if response.status_code != 200:
-        raise HTTPException(status_code=response.status_code, detail=response.text)
-    return response
-
 
 @app.post('/statement-question')
 async def statement_question(statementModel: StatementModel):
@@ -172,3 +178,9 @@ async def upload_file(file: UploadFile):
         file_object.write(file.file.read())
     print({"info": f"file '{file.filename}' uploaded at {file_location}"})
     return {"info": f"file '{file.filename}' uploaded at {file_location}"}
+
+
+@app.get('/get-csv')
+def get_csv():
+    return statementUtils.process_csv()
+    
