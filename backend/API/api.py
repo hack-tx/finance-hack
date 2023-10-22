@@ -11,6 +11,9 @@ from fastapi import FastAPI, HTTPException, UploadFile, File
 from pydantic import BaseModel
 from pathlib import Path
 import httpx
+from fastapi.responses import JSONResponse
+
+import os
 import requests
 import statementUtils
 
@@ -50,7 +53,16 @@ def query_bot(item: QueryModel):
     return {"response": output[0]['generated_text']}
 
 
+@app.get('/check-message')
+def check_message():
+    if os.path.exists('files/transactions.csv'):
+        return JSONResponse(status_code=200, content='okay')
+    else:
+        return JSONResponse(status_code=404, content='okay')
 
+        
+
+    
 
 @app.post('/profile-question')
 async def profile_question(profile: ProfileModel):

@@ -29,7 +29,6 @@ def process_csv_text_table(filename):
     for category in sums:
         print(category.ljust(20), f"{sums[category]:>10.2f}", f"{counts[category]:>10}", f"{averages[category]:>10.2f}")
 
-
 def parse_json_to_text(json_data):
 
     json_data = json.loads(json_data)
@@ -74,8 +73,6 @@ def process_csv(filename):
     json_output = json.dumps(results, indent=4)
     print(json_output)
     return json_output
-
-
 
 
 
