@@ -30,6 +30,15 @@ def process_csv_text_table(filename):
         print(category.ljust(20), f"{sums[category]:>10.2f}", f"{counts[category]:>10}", f"{averages[category]:>10.2f}")
 
 
+def parse_json_to_text(json_data):
+    text_data = ""
+    for category, stats in json_data.items():
+        total = stats['Total']
+        count = stats['Count']
+        average = stats['Average']
+        text_data += f"Category: {category}\nTotal: {total}\nCount: {count}\nAverage: {average}\n\n"
+    return text_data
+
 def process_csv(filename):
     # Initialize defaultdicts to store sums and counts
     sums = defaultdict(float)
@@ -62,6 +71,7 @@ def process_csv(filename):
     # Convert the results to JSON and print
     json_output = json.dumps(results, indent=4)
     print(json_output)
+    return json_output
 
 
 
