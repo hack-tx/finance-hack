@@ -44,11 +44,13 @@ def query_bot(item: QueryModel):
 
 # TODO: FINISH THIS
 @app.post('/profile-question')
-def profile_question(item: ProfileModel):
+def profile_question(profile: ProfileModel):
+
+### QUESTON:\n How can I access and review these SEC filings? Given the following information: debt: 800, income: 4000/month, expenses: 2000/month, stock_market_knowledge: intermediate, investment_risk: medium, interest_sectors: ['technology', 'communications']
 
     f"""
     ### QUESTON:
-    {ProfileModel.question} Given the following information: debt: {ProfileModel.debt} , income: {ProfileModel.income} , expenses: {ProfileModel.expenses} , stock_market_knowledge: {ProfileModel.stock_market_knowledge} , investment_risk: {ProfileModel.investment_risk}, interest_sectors: {ProfileModel.interest_sectors} 
+    {profile.question} Given the following information: debt: {profile.debt} , income: {profile.income} , expenses: {profile.expenses} , stock_market_knowledge: {profile.stock_market_knowledge} , investment_risk: {profile.investment_risk}, interest_sectors: {profile.interest_sectors} 
 
 
     ### Response:
