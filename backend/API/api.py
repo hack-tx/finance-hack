@@ -1,6 +1,5 @@
 
 
-# FastAPI setup
 #    ____         __  ___   ___  ____  ____    __          
 #   / __/__ ____ / /_/ _ | / _ \/  _/ / __/__ / /___ _____ 
 #  / _// _ `(_-</ __/ __ |/ ___// /  _\ \/ -_) __/ // / _ \
@@ -8,8 +7,9 @@
 #                                                   /_/    
 
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from pydantic import BaseModel
+from pathlib import Path
 import requests
 
 app = FastAPI()
@@ -32,3 +32,11 @@ def api_endpoint(item: QueryModel):
 
     output = response.json()
     return {"response": output[0]['generated_text']}
+
+@app.post("/upload-csv")
+async def upload_file(file: UploadFile):
+    file_location = f"files/{file.filename}"
+    with open(file_location, "wb+") as file_object:
+        file_object.write(file.file.read())
+    print({"info": f"file '{file.filename}' uploaded at {file_location}"})
+    return {"info": f"file '{file.filename}' uploaded at {file_location}"}
