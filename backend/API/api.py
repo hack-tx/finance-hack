@@ -7,13 +7,14 @@
 #                                                   /_/    
 
 
-from fastapi import FastAPI, HTTPException, UploadFile, File
+from fastapi import FastAPI, HTTPException, UploadFile, File,  status
 from pydantic import BaseModel
 from pathlib import Path
 from fastapi.middleware.cors import CORSMiddleware
 import httpx
 from fastapi.responses import JSONResponse
 
+import json
 import os
 import requests
 import statementUtils
@@ -48,7 +49,28 @@ class ProfileModel(BaseModel):
     investment_risk: str            # "low",
     interest_sectors: str           # ["tech", "health", "automotive"]
 
-    
+
+
+
+@app.post("/profile")
+async def create_profile(profile: ProfileModel):
+    data = profile.dict()
+    with open("profile.json", "w") as f:
+        json.dump(data, f, indent=4)
+    return {"message": "Profile data saved successfully"}
+
+def read_profile_data():
+    if os.path.exists("profile.json"):
+        with open("profile.json", "r") as f:
+            data = json.load(f)
+        return data
+    else:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No profile data found")
+
+@app.get("/get-profile")
+async def get_profile():
+    data = read_profile_data()
+    return data
 
 
 @app.post('/query-bot')
@@ -71,7 +93,9 @@ def check_message():
 
         
 
-    
+
+
+
 
 @app.post('/profile-question')
 async def profile_question(profile: ProfileModel):
