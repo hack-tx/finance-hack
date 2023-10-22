@@ -42,7 +42,7 @@ def query_bot(item: QueryModel):
     output = response.json()
     return {"response": output[0]['generated_text']}
 
-# TODO: FINISH THIS
+
 @app.post('/profile-question')
 def profile_question(profile: ProfileModel):
 
@@ -68,6 +68,38 @@ def profile_question(profile: ProfileModel):
 
     output = response.json()
     return {"response": output[0]['generated_text']}
+
+
+@app.post('/profile-question-2')
+async def profile_question_2(profile: ProfileModel):
+
+    query = f"""
+    ### QUESTON:
+    {profile.question} Given the following information: debt: {profile.debt}, income: {profile.income}, expenses: {profile.expenses}, stock_market_knowledge: {profile.stock_market_knowledge}, investment_risk: {profile.investment_risk}, interest_sectors: {profile.interest_sectors}
+
+    ### Response:
+
+    """
+
+    response = await make_post_request(query)
+    output = response.json()
+
+    generated_text = output[0]['generated_text']
+    if not generated_text.endswith('\n'):
+        new_query = query + generated_text
+        print(new_query)
+        response = await make_post_request(new_query)
+        output = response.json()
+
+    return {"response": output[0]['generated_text']}
+
+async def make_post_request(query):
+    response = requests.post(API_URL, headers=headers, json={"inputs": query})
+
+    if response.status_code != 200:
+        raise HTTPException(status_code=response.status_code, detail=response.text)
+    return response
+
 
 
 # TODO: FINISH THIS
