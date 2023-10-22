@@ -41,13 +41,15 @@ class QueryModel(BaseModel):
 class StatementModel(BaseModel):
     question: str
 class ProfileModel(BaseModel):
-    question: str
     debt: str                       # "3000",
     income: str                     # "4000/month",
     expenses: str                   # "2000/month",
     stock_market_knowledge: str     # "begginer",
     investment_risk: str            # "low",
     interest_sectors: str           # ["tech", "health", "automotive"]
+class ProfileModelQ(BaseModel):
+    question: str
+
 
 
 
@@ -91,18 +93,16 @@ def check_message():
     else:
         return JSONResponse(status_code=404, content='okay')
 
-        
-
-
-
 
 
 @app.post('/profile-question')
-async def profile_question(profile: ProfileModel):
+async def profile_question(query: ProfileModelQ):
+
+    profile = read_profile_data()
 
     query = f"""
     ### QUESTON:
-    {profile.question} Given the following information: debt: {profile.debt}, income: {profile.income}, expenses: {profile.expenses}, stock_market_knowledge: {profile.stock_market_knowledge}, investment_risk: {profile.investment_risk}, interest_sectors: {profile.interest_sectors}
+    {query.question} Given the following information: debt: {profile.debt}, income: {profile.income}, expenses: {profile.expenses}, stock_market_knowledge: {profile.stock_market_knowledge}, investment_risk: {profile.investment_risk}, interest_sectors: {profile.interest_sectors}
 
     ### Response:
 
@@ -123,7 +123,7 @@ async def profile_question(profile: ProfileModel):
         
         query += generated_text  # append the generated text to the query for the next iteration
 
-    return {"response": complete_response.replace('\n', '')}
+    return complete_response.replace('\n', '')
 
 async def make_post_request(query):
     async with httpx.AsyncClient() as client:
@@ -163,7 +163,7 @@ async def statement_question(statementModel: StatementModel):
         
         query += generated_text  # append the generated text to the query for the next iteration
 
-    return {"response": complete_response.replace('\n', '')}
+    return  complete_response.replace('\n', '')
 
 @app.post("/upload-csv")
 async def upload_file(file: UploadFile):
