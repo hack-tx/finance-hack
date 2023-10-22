@@ -92,7 +92,7 @@ async def profile_question_2(profile: ProfileModel):
         complete_response += generated_text
         
         # Check for punctuation or newline at the end of the generated text
-        if generated_text[-1] in {'.', '!', '?', '\n'}:
+        if generated_text[-1] in {'.', '!', '?', '\n', '.\n\n'}:
             break
         
         query += generated_text  # append the generated text to the query for the next iteration
