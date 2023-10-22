@@ -102,7 +102,7 @@ async def profile_question(query: ProfileModelQ):
 
     query = f"""
     ### QUESTON:
-    {query.question} Given the following information: debt: {profile.debt}, income: {profile.income}, expenses: {profile.expenses}, stock_market_knowledge: {profile.stock_market_knowledge}, investment_risk: {profile.investment_risk}, interest_sectors: {profile.interest_sectors}
+    {query.question} Given the following information: debt: {profile['debt']}, income: {profile['income']}, expenses: {profile['expenses']}, stock_market_knowledge: {profile['stock_market_knowledge']}, investment_risk: {profile['investment_risk']}, interest_sectors: {profile['interest_sectors']}
 
     ### Response:
 
