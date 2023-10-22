@@ -177,7 +177,7 @@ async def upload_file(file: UploadFile):
     with open(file_location, "wb+") as file_object:
         file_object.write(file.file.read())
     print({"info": f"file '{file.filename}' uploaded at {file_location}"})
-    return {"info": f"file '{file.filename}' uploaded at {file_location}"}
+    return {"info": f"file 'transaction.csv' uploaded at {file_location}"}
 
 
 @app.get('/get-csv')
